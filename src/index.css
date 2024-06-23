@@ -10,3 +10,6 @@ body {
 .clicked:active {
   transform: scale(0.9);
 }
+body {
+  background: rgb(26, 47, 67);
+}
