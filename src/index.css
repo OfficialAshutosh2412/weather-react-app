@@ -1,15 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   display: flex;
   align-items: center;
   height: 100vh;
   justify-content: center;
+  background: rgb(26, 47, 67);
 }
+
 .clicked:active {
   transform: scale(0.9);
 }
-body {
-  background: rgb(26, 47, 67);
+
+@media screen and (max-width:640px) {
+  body {
+    height: auto;
+  }
+
+  .left {
+    border-right: none;
+  }
+
+}
+
+@media screen and (max-width:490px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+
+
+  .right-row-1,
+  .right-row-2,
+  .right-row-3 {
+
+    flex-wrap: wrap
+  }
+
 }
